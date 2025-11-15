@@ -32,19 +32,42 @@
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
-                        <a href="#top" class="nav-link">Home</a>
+                        <a href="#top" class="nav-link" data-translate="nav.home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#apps" class="nav-link">Products</a>
+                        <a href="#apps" class="nav-link" data-translate="nav.products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#pricing" class="nav-link">Pricing</a>
+                        <a href="#pricing" class="nav-link" data-translate="nav.pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#about" class="nav-link" data-translate="nav.about">About</a>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-cta" onclick="scrollToSection('pricing')">Get Started</button>
+                        <button class="nav-cta" onclick="scrollToSection('pricing')" data-translate="nav.getStarted">Get Started</button>
+                    </li>
+                    <li class="nav-item">
+                        <div class="language-selector">
+                            <button class="language-btn" id="languageBtn">
+                                <span class="language-flag">🇬🇧</span>
+                                <span class="language-text" data-translate="nav.language">EN</span>
+                                <span class="language-arrow">▼</span>
+                            </button>
+                            <div class="language-dropdown" id="languageDropdown">
+                                <button class="language-option" data-lang="en">
+                                    <span class="language-flag">🇬🇧</span>
+                                    <span>English</span>
+                                </button>
+                                <button class="language-option" data-lang="ru">
+                                    <span class="language-flag">🇷🇺</span>
+                                    <span>Русский</span>
+                                </button>
+                                <button class="language-option" data-lang="uz">
+                                    <span class="language-flag">🇺🇿</span>
+                                    <span>O'zbek</span>
+                                </button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <div class="nav-toggle" id="navToggle">
@@ -71,17 +94,17 @@
         </div>
         <div class="hero-content reveal">
             <h1 class="hero-title">
-                The all-in-one platform<br>
-                <span class="gradient-text">for growing businesses</span>
+                <span data-translate="hero.title1">The all-in-one platform</span><br>
+                <span class="gradient-text" data-translate="hero.title2">for growing businesses</span>
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-translate="hero.subtitle">
                 Nusra combines Website Builder + Hosting, Delivery Management System (DMS), 
                 and Warehouse Management System (WMS) into one powerful platform. 
                 Everything your business needs, all in one place.
             </p>
             <div class="hero-cta">
-                <button class="btn-primary" onclick="scrollToSection('pricing')">Get Nusra</button>
-                <button class="btn-secondary" onclick="scrollToSection('apps')">Learn More</button>
+                <button class="btn-primary" onclick="scrollToSection('pricing')" data-translate="hero.getNusra">Get Nusra</button>
+                <button class="btn-secondary" onclick="scrollToSection('apps')" data-translate="hero.learnMore">Learn More</button>
             </div>
         </div>
         <div class="hero-scroll-indicator">
@@ -93,8 +116,8 @@
     <section id="apps" class="apps-section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title">Everything Your Business Needs</h2>
-                <p class="section-subtitle">Three powerful applications, one unified platform</p>
+                <h2 class="section-title" data-translate="apps.title">Everything Your Business Needs</h2>
+                <p class="section-subtitle" data-translate="apps.subtitle">Three powerful applications, one unified platform</p>
             </div>
 
             <!-- Website Builder Card -->
@@ -102,14 +125,14 @@
                 <div class="app-content">
                     <div class="app-text">
                         <div class="app-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🌐</div>
-                        <h3 class="app-title">Website Builder + Hosting</h3>
-                        <p class="app-description">
+                        <h3 class="app-title" data-translate="apps.website.title">Website Builder + Hosting</h3>
+                        <p class="app-description" data-translate="apps.website.description">
                             Build modern, professional websites and full-featured e-commerce stores with our intuitive drag-and-drop tools. 
                             Create your online store in minutes - no coding required! Fast, reliable hosting included with enterprise-grade security.
                         </p>
                         <div class="ecommerce-highlight">
-                            <h4 class="ecommerce-title">✨ Build Your E-Commerce Store with Drag & Drop</h4>
-                            <p class="ecommerce-text">Create a complete online store without writing a single line of code. Add products, manage inventory, process payments, and track orders - all with simple drag-and-drop tools.</p>
+                            <h4 class="ecommerce-title" data-translate="apps.website.ecommerceTitle">✨ Build Your E-Commerce Store with Drag & Drop</h4>
+                            <p class="ecommerce-text" data-translate="apps.website.ecommerceText">Create a complete online store without writing a single line of code. Add products, manage inventory, process payments, and track orders - all with simple drag-and-drop tools.</p>
                         </div>
                         <ul class="app-benefits">
                             <li><span class="check-icon">✓</span> Drag-and-drop e-commerce website builder</li>
@@ -138,14 +161,14 @@
                 <div class="app-content reverse">
                     <div class="app-text">
                         <div class="app-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🚚</div>
-                        <h3 class="app-title">Delivery Management System (DMS)</h3>
-                        <p class="app-description">
+                        <h3 class="app-title" data-translate="apps.dms.title">Delivery Management System (DMS)</h3>
+                        <p class="app-description" data-translate="apps.dms.description">
                             Streamline your delivery operations with real-time tracking, route optimization, 
                             and driver management. Includes powerful mobile app for drivers to navigate, follow routes, and manage orders on the go.
                         </p>
                         <div class="driver-app-highlight">
-                            <h4 class="driver-app-title">📱 Driver Mobile App - Complete Delivery Solution</h4>
-                            <p class="driver-app-text">Our dedicated mobile app empowers drivers with everything they need for efficient deliveries. Navigate routes, update order status, communicate with customers, and track earnings - all from your smartphone.</p>
+                            <h4 class="driver-app-title" data-translate="apps.dms.driverTitle">📱 Driver Mobile App - Complete Delivery Solution</h4>
+                            <p class="driver-app-text" data-translate="apps.dms.driverText">Our dedicated mobile app empowers drivers with everything they need for efficient deliveries. Navigate routes, update order status, communicate with customers, and track earnings - all from your smartphone.</p>
                             <ul class="driver-app-features">
                                 <li><span class="check-icon-small">✓</span> Turn-by-turn GPS navigation</li>
                                 <li><span class="check-icon-small">✓</span> Real-time order assignment</li>
@@ -166,8 +189,11 @@
                         <button class="btn-learn-more">Learn More</button>
                     </div>
                     <div class="app-image-container">
-                        <div class="app-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop');">
+                        <div class="app-image" style="background-image: url('https://images.unsplash.com/photo-1601581875037-eb1923c511a2?w=1200&h=800&fit=crop');">
                             <div class="image-overlay" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                            <div class="truck-navigation-overlay">
+                                <img src="https://images.unsplash.com/photo-1601581875037-eb1923c511a2?w=1200&h=800&fit=crop" alt="Delivery Truck with Navigation" class="truck-nav-image">
+                            </div>
                         </div>
                         <div class="mobile-app-preview">
                             <div class="mobile-app-image" style="background-image: url('https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&h=800&fit=crop');">
@@ -385,17 +411,15 @@
                             <span class="contact-icon">📞</span>
                             <div>
                                 <p class="contact-label">Phone</p>
-                                <p class="contact-value">+1 (555) 123-4567</p>
+                                <p class="contact-value">+998773917711</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <span class="contact-icon">📍</span>
                             <div>
                                 <p class="contact-label">Location</p>
-                                <p class="contact-value">
-                                    123 Business Street<br>
-                                    San Francisco, CA 94105<br>
-                                    United States
+                                <p class="contact-value" data-translate="contact.address">
+                                    Tashkent city, Bogibuston st 186
                                 </p>
                             </div>
                         </div>
@@ -403,10 +427,52 @@
                             <span class="contact-icon">✉️</span>
                             <div>
                                 <p class="contact-label">Email</p>
-                                <p class="contact-value">contact@nusra.com</p>
+                                <p class="contact-value">jakhongir@nusra.com</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clients Section -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title" data-translate="clients.title">Our Clients</h2>
+                <p class="section-subtitle" data-translate="clients.subtitle">Trusted by leading brands worldwide</p>
+            </div>
+            <div class="clients-grid reveal">
+                <div class="client-logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1a1a1a">Apple</text>
+                    </svg>
+                </div>
+                <div class="client-logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0066ff">Microsoft</text>
+                    </svg>
+                </div>
+                <div class="client-logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#4285F4">Google</text>
+                    </svg>
+                </div>
+                <div class="client-logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">Amazon</text>
+                    </svg>
+                </div>
+                <div class="client-logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#635BFF">Stripe</text>
+                    </svg>
+                </div>
+                <div class="client-logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00D4FF">Shopify</text>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -453,11 +519,10 @@
                 <div class="footer-section">
                     <h4 class="footer-heading">Contact</h4>
                     <ul class="footer-links">
-                        <li><a href="mailto:contact@nusra.com" class="footer-link">contact@nusra.com</a></li>
-                        <li><a href="tel:+15551234567" class="footer-link">+1 (555) 123-4567</a></li>
-                        <li class="footer-address">
-                            123 Business Street<br>
-                            San Francisco, CA 94105
+                        <li><a href="mailto:jakhongir@nusra.com" class="footer-link">jakhongir@nusra.com</a></li>
+                        <li><a href="tel:+998773917711" class="footer-link">+998773917711</a></li>
+                        <li class="footer-address" data-translate="footer.address">
+                            Tashkent city, Bogibuston st 186
                         </li>
                     </ul>
                 </div>
