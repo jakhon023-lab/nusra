@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nusra - The all-in-one platform for growing businesses. Website Builder, DMS, and WMS solutions.">
+    <title>Nusra - All-in-One Digital Solution for Your Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#top">Nusra</a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#apps" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-cta" onclick="scrollToSection('pricing')">Get Started</button>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="top" class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">
+                The all-in-one platform<br>
+                <span class="gradient-text">for growing businesses</span>
+            </h1>
+            <p class="hero-subtitle">
+                Nusra combines Website Builder + Hosting, Delivery Management System (DMS), 
+                and Warehouse Management System (WMS) into one powerful platform. 
+                Everything your business needs, all in one place.
+            </p>
+            <div class="hero-cta">
+                <button class="btn-primary" onclick="scrollToSection('pricing')">Get Nusra</button>
+                <button class="btn-secondary" onclick="scrollToSection('apps')">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="apps" class="apps-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Everything Your Business Needs</h2>
+                <p class="section-subtitle">Three powerful applications, one unified platform</p>
+            </div>
+
+            <!-- Website Builder Card -->
+            <div class="app-card reveal">
+                <div class="app-content">
+                    <div class="app-text">
+                        <div class="app-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🌐</div>
+                        <h3 class="app-title">Website Builder + Hosting</h3>
+                        <p class="app-description">
+                            Build modern, professional websites with our intuitive drag-and-drop tools. 
+                            Fast, reliable hosting included with enterprise-grade security.
+                        </p>
+                        <ul class="app-benefits">
+                            <li><span class="check-icon">✓</span> Drag-and-drop website builder</li>
+                            <li><span class="check-icon">✓</span> Fast, reliable hosting included</li>
+                            <li><span class="check-icon">✓</span> Enterprise-grade security</li>
+                            <li><span class="check-icon">✓</span> Mobile-responsive templates</li>
+                            <li><span class="check-icon">✓</span> SEO optimization tools</li>
+                            <li><span class="check-icon">✓</span> 24/7 technical support</li>
+                        </ul>
+                        <button class="btn-learn-more">Learn More</button>
+                    </div>
+                    <div class="app-image-container">
+                        <div class="app-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop');">
+                            <div class="image-overlay" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DMS Card -->
+            <div class="app-card reveal">
+                <div class="app-content reverse">
+                    <div class="app-text">
+                        <div class="app-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🚚</div>
+                        <h3 class="app-title">Delivery Management System (DMS)</h3>
+                        <p class="app-description">
+                            Streamline your delivery operations with real-time tracking, route optimization, 
+                            and driver management. Includes mobile app for drivers to navigate, follow, and issue orders.
+                        </p>
+                        <ul class="app-benefits">
+                            <li><span class="check-icon">✓</span> Real-time order tracking</li>
+                            <li><span class="check-icon">✓</span> Route optimization</li>
+                            <li><span class="check-icon">✓</span> Driver management</li>
+                            <li><span class="check-icon">✓</span> Mobile app for drivers</li>
+                            <li><span class="check-icon">✓</span> Order status updates</li>
+                            <li><span class="check-icon">✓</span> Reduce delivery time and costs</li>
+                        </ul>
+                        <button class="btn-learn-more">Learn More</button>
+                    </div>
+                    <div class="app-image-container">
+                        <div class="app-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop');">
+                            <div class="image-overlay" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        </div>
+                        <div class="mobile-app-preview">
+                            <div class="mobile-app-image" style="background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=800&fit=crop');">
+                                <div class="mobile-frame"></div>
+                            </div>
+                            <p class="mobile-app-label">Mobile App for Drivers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WMS Card -->
+            <div class="app-card reveal">
+                <div class="app-content">
+                    <div class="app-text">
+                        <div class="app-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">📦</div>
+                        <h3 class="app-title">Warehouse Management System (WMS)</h3>
+                        <p class="app-description">
+                            Automate and control your warehouse operations with comprehensive inventory management, 
+                            barcode scanning, and advanced analytics.
+                        </p>
+                        <ul class="app-benefits">
+                            <li><span class="check-icon">✓</span> Real-time stock monitoring</li>
+                            <li><span class="check-icon">✓</span> Barcode scanning</li>
+                            <li><span class="check-icon">✓</span> Inbound/outbound management</li>
+                            <li><span class="check-icon">✓</span> Warehouse analytics</li>
+                            <li><span class="check-icon">✓</span> Batch & expiry control</li>
+                            <li><span class="check-icon">✓</span> Automated inventory tracking</li>
+                        </ul>
+                        <button class="btn-learn-more">Learn More</button>
+                    </div>
+                    <div class="app-image-container">
+                        <div class="app-image" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&h=800&fit=crop');">
+                            <div class="image-overlay" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">
+                    Choose the plan that fits your business. Subscribe to individual products or get everything with our all-in-one bundle.
+                </p>
+            </div>
+
+            <div class="pricing-grid reveal">
+                <!-- Website Builder Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Website Builder + Hosting</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">$19</span>
+                            <span class="price-period">/month/member</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="feature-icon">✓</span> Drag-and-drop builder</li>
+                        <li><span class="feature-icon">✓</span> Fast hosting included</li>
+                        <li><span class="feature-icon">✓</span> SSL certificate</li>
+                        <li><span class="feature-icon">✓</span> Email support</li>
+                        <li><span class="feature-icon">✓</span> Mobile responsive</li>
+                        <li><span class="feature-icon">✓</span> SEO tools</li>
+                    </ul>
+                    <button class="btn-subscribe btn-outline">Subscribe Now</button>
+                </div>
+
+                <!-- DMS Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">DMS</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">$29</span>
+                            <span class="price-period">/month/member</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="feature-icon">✓</span> Real-time tracking</li>
+                        <li><span class="feature-icon">✓</span> Route optimization</li>
+                        <li><span class="feature-icon">✓</span> Driver management</li>
+                        <li><span class="feature-icon">✓</span> Mobile app for drivers</li>
+                        <li><span class="feature-icon">✓</span> Order management</li>
+                        <li><span class="feature-icon">✓</span> Analytics dashboard</li>
+                    </ul>
+                    <button class="btn-subscribe btn-outline">Subscribe Now</button>
+                </div>
+
+                <!-- WMS Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">WMS</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">$25</span>
+                            <span class="price-period">/month/member</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="feature-icon">✓</span> Inventory tracking</li>
+                        <li><span class="feature-icon">✓</span> Barcode scanning</li>
+                        <li><span class="feature-icon">✓</span> Warehouse analytics</li>
+                        <li><span class="feature-icon">✓</span> Batch control</li>
+                        <li><span class="feature-icon">✓</span> Expiry management</li>
+                        <li><span class="feature-icon">✓</span> Reporting tools</li>
+                    </ul>
+                    <button class="btn-subscribe btn-outline">Subscribe Now</button>
+                </div>
+
+                <!-- All-in-One Bundle -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">All-in-One Bundle</h3>
+                        <div class="plan-price">
+                            <span class="price-amount">$59</span>
+                            <span class="price-period">/month/member</span>
+                        </div>
+                        <div class="price-savings">
+                            <span class="original-price">$73</span>
+                            <span class="savings-text">Save $14/month</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><span class="feature-icon">✓</span> All features from Website Builder</li>
+                        <li><span class="feature-icon">✓</span> All features from DMS</li>
+                        <li><span class="feature-icon">✓</span> All features from WMS</li>
+                        <li><span class="feature-icon">✓</span> Priority support</li>
+                        <li><span class="feature-icon">✓</span> Advanced analytics</li>
+                        <li><span class="feature-icon">✓</span> Custom integrations</li>
+                    </ul>
+                    <button class="btn-subscribe btn-primary">Subscribe Now</button>
+                </div>
+            </div>
+
+            <div class="pricing-note reveal">
+                <p>
+                    <strong>Flexible subscriptions:</strong> Users can subscribe to each product separately 
+                    or choose the all-in-one bundle for maximum value and convenience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Nusra</h2>
+                <p class="section-subtitle">Empowering businesses with integrated digital solutions</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <div class="about-block">
+                        <h3 class="about-heading">Our Mission</h3>
+                        <p class="about-description">
+                            At Nusra, we believe that small and medium-sized businesses deserve 
+                            enterprise-grade tools without the complexity. Our mission is to provide 
+                            a powerful all-in-one platform that covers all essential workflows, enabling 
+                            businesses to focus on what they do best—growing and serving their customers.
+                        </p>
+                    </div>
+
+                    <div class="about-block">
+                        <h3 class="about-heading">Our Vision</h3>
+                        <p class="about-description">
+                            We envision a world where every business, regardless of size, has access to 
+                            integrated digital solutions that streamline operations, reduce costs, and 
+                            drive growth. Nusra is committed to being the trusted partner that helps 
+                            businesses thrive in the digital age.
+                        </p>
+                    </div>
+
+                    <div class="about-block">
+                        <h3 class="about-heading">Our CEO</h3>
+                        <div class="ceo-info">
+                            <div class="ceo-avatar">JD</div>
+                            <div class="ceo-details">
+                                <h4 class="ceo-name">John Doe</h4>
+                                <p class="ceo-bio">
+                                    With over 15 years of experience in enterprise software and digital transformation, 
+                                    John founded Nusra to bridge the gap between complex enterprise solutions and 
+                                    the needs of growing businesses. His vision is to make powerful business tools 
+                                    accessible and affordable for everyone.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-block">
+                        <h3 class="about-heading">Our Team</h3>
+                        <p class="about-description">
+                            Nusra is powered by a diverse team of talented engineers, designers, and business 
+                            experts who are passionate about creating solutions that make a real difference. 
+                            We combine deep technical expertise with a customer-first approach to deliver 
+                            products that are both powerful and easy to use.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <h3 class="contact-heading">Get in Touch</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">
+                                    123 Business Street<br>
+                                    San Francisco, CA 94105<br>
+                                    United States
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">contact@nusra.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">Nusra</h3>
+                    <p class="footer-description">
+                        The all-in-one platform for growing businesses. 
+                        Website Builder, DMS, and WMS in one powerful solution.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#top" class="footer-link">Home</a></li>
+                        <li><a href="#apps" class="footer-link">Products</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#apps" class="footer-link">Website Builder</a></li>
+                        <li><a href="#apps" class="footer-link">DMS</a></li>
+                        <li><a href="#apps" class="footer-link">WMS</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contact@nusra.com" class="footer-link">contact@nusra.com</a></li>
+                        <li><a href="tel:+15551234567" class="footer-link">+1 (555) 123-4567</a></li>
+                        <li class="footer-address">
+                            123 Business Street<br>
+                            San Francisco, CA 94105
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Nusra. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="footer-link-small">Privacy Policy</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#" class="footer-link-small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
