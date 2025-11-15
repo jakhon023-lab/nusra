@@ -16,7 +16,19 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <a href="#top">Nusra</a>
+                    <a href="#top" class="logo-link">
+                        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#logoGradient)"/>
+                            <path d="M20 10L12 18H16V28H24V18H28L20 10Z" fill="white"/>
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#667eea"/>
+                                    <stop offset="1" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">Nusra</span>
+                    </a>
                 </div>
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
@@ -48,6 +60,14 @@
     <section id="top" class="hero">
         <div class="hero-background">
             <div class="hero-gradient"></div>
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="https://videos.pexels.com/video-files/3045163/3045163-hd_1920_1080_30fps.mp4" type="video/mp4">
+                    <!-- Fallback video URL - replace with your logistics/warehouse video -->
+                    <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
         </div>
         <div class="hero-content reveal">
             <h1 class="hero-title">
@@ -84,11 +104,19 @@
                         <div class="app-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🌐</div>
                         <h3 class="app-title">Website Builder + Hosting</h3>
                         <p class="app-description">
-                            Build modern, professional websites with our intuitive drag-and-drop tools. 
-                            Fast, reliable hosting included with enterprise-grade security.
+                            Build modern, professional websites and full-featured e-commerce stores with our intuitive drag-and-drop tools. 
+                            Create your online store in minutes - no coding required! Fast, reliable hosting included with enterprise-grade security.
                         </p>
+                        <div class="ecommerce-highlight">
+                            <h4 class="ecommerce-title">✨ Build Your E-Commerce Store with Drag & Drop</h4>
+                            <p class="ecommerce-text">Create a complete online store without writing a single line of code. Add products, manage inventory, process payments, and track orders - all with simple drag-and-drop tools.</p>
+                        </div>
                         <ul class="app-benefits">
-                            <li><span class="check-icon">✓</span> Drag-and-drop website builder</li>
+                            <li><span class="check-icon">✓</span> Drag-and-drop e-commerce website builder</li>
+                            <li><span class="check-icon">✓</span> Product catalog management</li>
+                            <li><span class="check-icon">✓</span> Payment gateway integration</li>
+                            <li><span class="check-icon">✓</span> Shopping cart & checkout system</li>
+                            <li><span class="check-icon">✓</span> Order management dashboard</li>
                             <li><span class="check-icon">✓</span> Fast, reliable hosting included</li>
                             <li><span class="check-icon">✓</span> Enterprise-grade security</li>
                             <li><span class="check-icon">✓</span> Mobile-responsive templates</li>
@@ -113,14 +141,26 @@
                         <h3 class="app-title">Delivery Management System (DMS)</h3>
                         <p class="app-description">
                             Streamline your delivery operations with real-time tracking, route optimization, 
-                            and driver management. Includes mobile app for drivers to navigate, follow, and issue orders.
+                            and driver management. Includes powerful mobile app for drivers to navigate, follow routes, and manage orders on the go.
                         </p>
+                        <div class="driver-app-highlight">
+                            <h4 class="driver-app-title">📱 Driver Mobile App - Complete Delivery Solution</h4>
+                            <p class="driver-app-text">Our dedicated mobile app empowers drivers with everything they need for efficient deliveries. Navigate routes, update order status, communicate with customers, and track earnings - all from your smartphone.</p>
+                            <ul class="driver-app-features">
+                                <li><span class="check-icon-small">✓</span> Turn-by-turn GPS navigation</li>
+                                <li><span class="check-icon-small">✓</span> Real-time order assignment</li>
+                                <li><span class="check-icon-small">✓</span> One-tap delivery confirmation</li>
+                                <li><span class="check-icon-small">✓</span> Customer communication tools</li>
+                                <li><span class="check-icon-small">✓</span> Photo proof of delivery</li>
+                                <li><span class="check-icon-small">✓</span> Earnings & performance tracking</li>
+                            </ul>
+                        </div>
                         <ul class="app-benefits">
                             <li><span class="check-icon">✓</span> Real-time order tracking</li>
-                            <li><span class="check-icon">✓</span> Route optimization</li>
-                            <li><span class="check-icon">✓</span> Driver management</li>
-                            <li><span class="check-icon">✓</span> Mobile app for drivers</li>
-                            <li><span class="check-icon">✓</span> Order status updates</li>
+                            <li><span class="check-icon">✓</span> AI-powered route optimization</li>
+                            <li><span class="check-icon">✓</span> Driver management & scheduling</li>
+                            <li><span class="check-icon">✓</span> Advanced mobile app for drivers</li>
+                            <li><span class="check-icon">✓</span> Automated order status updates</li>
                             <li><span class="check-icon">✓</span> Reduce delivery time and costs</li>
                         </ul>
                         <button class="btn-learn-more">Learn More</button>
@@ -130,10 +170,16 @@
                             <div class="image-overlay" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
                         </div>
                         <div class="mobile-app-preview">
-                            <div class="mobile-app-image" style="background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=800&fit=crop');">
+                            <div class="mobile-app-image" style="background-image: url('https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&h=800&fit=crop');">
                                 <div class="mobile-frame"></div>
                             </div>
-                            <p class="mobile-app-label">Mobile App for Drivers</p>
+                            <p class="mobile-app-label">Driver Mobile App</p>
+                        </div>
+                        <div class="driver-app-screenshot">
+                            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&h=800&fit=crop" alt="Driver Mobile App Interface" class="driver-app-img">
+                            <div class="screenshot-overlay">
+                                <p class="screenshot-label">Driver Dashboard</p>
+                            </div>
                         </div>
                     </div>
                 </div>

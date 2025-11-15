@@ -86,9 +86,45 @@ function scrollToSection(sectionId) {
     }
 }
 
+// Parallax effect for hero video
+function initParallax() {
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * 0.5;
+            heroVideo.style.transform = `translateY(${rate}px) scale(1.1)`;
+        });
+    }
+}
+
+// Smooth parallax for app images
+function initImageParallax() {
+    const appImages = document.querySelectorAll('.app-image');
+    appImages.forEach(image => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    window.addEventListener('scroll', function() {
+                        const rect = entry.boundingClientRect;
+                        const scrolled = window.pageYOffset;
+                        const rate = (scrolled - rect.top) * 0.1;
+                        if (entry.isIntersecting) {
+                            image.style.transform = `translateY(${rate}px) scale(1.05)`;
+                        }
+                    }, { passive: true });
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(image);
+    });
+}
+
 // Initialize animations when page loads
 document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
+    initParallax();
+    initImageParallax();
 });
 
 // Add smooth scroll behavior for anchor links
