@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nusra - The all-in-one platform for growing businesses. Website Builder, DMS, and WMS solutions.">
-    <title>Nusra - All-in-One Digital Solution for Your Business</title>
+    <meta name="description" content="Nusra's Delivery Management System (DMS) streamlines your delivery operations with real-time tracking, route optimization, and a free driver app. Request a demo today.">
+    <meta name="keywords" content="DMS, delivery management, logistics, driver app, route optimization, proof of delivery, Nusra">
+    <title>DMS - Delivery Management System | Nusra</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -38,6 +39,9 @@
                         <a href="#apps" class="nav-link" data-translate="nav.products">Products</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#dms" class="nav-link" data-translate="nav.dms">DMS</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#pricing" class="nav-link" data-translate="nav.pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
@@ -57,15 +61,19 @@
                                 <button class="language-option" data-lang="en">
                                     <span class="language-flag">🇬🇧</span>
                                     <span>English</span>
-                                </button>
-                                <button class="language-option" data-lang="ru">
-                                    <span class="language-flag">🇷🇺</span>
-                                    <span>Русский</span>
-                                </button>
+                                </button> 
+                                
                                 <button class="language-option" data-lang="uz">
                                     <span class="language-flag">🇺🇿</span>
                                     <span>O'zbek</span>
                                 </button>
+
+                                
+                                <button class="language-option" data-lang="ru">
+                                    <span class="language-flag">🇷🇺</span>
+                                    <span>Русский</span>
+                                </button>
+                               
                             </div>
                         </div>
                     </li>
@@ -156,57 +164,73 @@
                 </div>
             </div>
 
-            <!-- DMS Card -->
-            <div class="app-card reveal">
-                <div class="app-content reverse">
-                    <div class="app-text">
-                        <div class="app-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">🚚</div>
-                        <h3 class="app-title" data-translate="apps.dms.title">Delivery Management System (DMS)</h3>
-                        <p class="app-description" data-translate="apps.dms.description">
-                            Streamline your delivery operations with real-time tracking, route optimization, 
-                            and driver management. Includes powerful mobile app for drivers to navigate, follow routes, and manage orders on the go.
+            <!-- DMS Section - Redesigned -->
+            <div id="dms" class="dms-section reveal">
+                <!-- DMS Hero -->
+                <div class="dms-hero">
+                    <div class="dms-hero-content">
+                        <h2 class="dms-hero-title" data-translate="dms.hero.title">Delivery Management, simplified.</h2>
+                        <p class="dms-hero-subtitle" data-translate="dms.hero.subtitle">
+                            From order to proof of delivery — coordinate drivers, routes, and customers in one platform.
                         </p>
-                        <div class="driver-app-highlight">
-                            <h4 class="driver-app-title" data-translate="apps.dms.driverTitle">📱 Driver Mobile App - Complete Delivery Solution</h4>
-                            <p class="driver-app-text" data-translate="apps.dms.driverText">Our dedicated mobile app empowers drivers with everything they need for efficient deliveries. Navigate routes, update order status, communicate with customers, and track earnings - all from your smartphone.</p>
-                            <ul class="driver-app-features">
-                                <li><span class="check-icon-small">✓</span> Turn-by-turn GPS navigation</li>
-                                <li><span class="check-icon-small">✓</span> Real-time order assignment</li>
-                                <li><span class="check-icon-small">✓</span> One-tap delivery confirmation</li>
-                                <li><span class="check-icon-small">✓</span> Customer communication tools</li>
-                                <li><span class="check-icon-small">✓</span> Photo proof of delivery</li>
-                                <li><span class="check-icon-small">✓</span> Earnings & performance tracking</li>
-                            </ul>
+                        <div class="dms-hero-cta">
+                            <button class="btn-primary" onclick="scrollToSection('about')" data-translate="dms.hero.ctaDemo">Request a demo</button>
+                            <button class="btn-secondary" id="driverAppBtn" data-translate="dms.hero.ctaDriverApp">See Driver App</button>
                         </div>
-                        <ul class="app-benefits">
-                            <li><span class="check-icon">✓</span> Real-time order tracking</li>
-                            <li><span class="check-icon">✓</span> AI-powered route optimization</li>
-                            <li><span class="check-icon">✓</span> Driver management & scheduling</li>
-                            <li><span class="check-icon">✓</span> Advanced mobile app for drivers</li>
-                            <li><span class="check-icon">✓</span> Automated order status updates</li>
-                            <li><span class="check-icon">✓</span> Reduce delivery time and costs</li>
-                        </ul>
-                        <button class="btn-learn-more">Learn More</button>
                     </div>
-                    <div class="app-image-container">
-                        <div class="app-image" style="background-image: url('https://images.unsplash.com/photo-1601581875037-eb1923c511a2?w=1200&h=800&fit=crop');">
-                            <div class="image-overlay" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                            <div class="truck-navigation-overlay">
-                                <img src="https://images.unsplash.com/photo-1601581875037-eb1923c511a2?w=1200&h=800&fit=crop" alt="Delivery Truck with Navigation" class="truck-nav-image">
-                            </div>
-                        </div>
-                        <div class="mobile-app-preview">
-                            <div class="mobile-app-image" style="background-image: url('https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&h=800&fit=crop');">
-                                <div class="mobile-frame"></div>
-                            </div>
-                            <p class="mobile-app-label">Driver Mobile App</p>
-                        </div>
-                        <div class="driver-app-screenshot">
-                            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=600&h=800&fit=crop" alt="Driver Mobile App Interface" class="driver-app-img">
-                            <div class="screenshot-overlay">
-                                <p class="screenshot-label">Driver Dashboard</p>
-                            </div>
-                        </div>
+                    <div class="dms-hero-image">
+                        <img 
+                            src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                            alt="Warehouse courier delivering parcel — Nusra DMS in use" 
+                            class="dms-hero-img"
+                            loading="lazy"
+                        >
+                        <p class="image-caption" data-translate="dms.hero.imageCaption">Warehouse courier delivering parcel — Nusra DMS in use</p>
+                    </div>
+                </div>
+
+                <!-- DMS Feature Cards -->
+                <div class="dms-features-grid">
+                    <!-- Dispatch Card -->
+                    <div class="dms-feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h3 class="feature-card-title" data-translate="dms.features.dispatch.title">Smart Dispatch</h3>
+                        <p class="feature-card-text" data-translate="dms.features.dispatch.text">
+                            Automatically assign orders to drivers based on location, capacity, and availability. Optimize routes for maximum efficiency.
+                        </p>
+                    </div>
+
+                    <!-- Driver App Card -->
+                    <div class="dms-feature-card driver-app-card">
+                        <div class="feature-icon">📱</div>
+                        <h3 class="feature-card-title" data-translate="dms.features.driverApp.title">Free Driver App — for your drivers</h3>
+                        <p class="feature-card-text" data-translate="dms.features.driverApp.text">
+                            Nusra provides a free Driver App to our clients' drivers — covering the entire delivery process from order pickup to Proof of Delivery (POD).
+                        </p>
+                        <ul class="driver-app-bullets">
+                            <li data-translate="dms.features.driverApp.bullet1">Real-time GPS tracking & navigation</li>
+                            <li data-translate="dms.features.driverApp.bullet2">In-app order list & job acceptance</li>
+                            <li data-translate="dms.features.driverApp.bullet3">Digital Proof of Delivery with photo & signature</li>
+                            <li data-translate="dms.features.driverApp.bullet4">Automatic sync with Nusra DMS (no manual uploads)</li>
+                        </ul>
+                        <button class="btn-driver-demo" id="driverAppFeatureBtn" data-translate="dms.features.driverApp.cta">Open driver demo</button>
+                    </div>
+
+                    <!-- Analytics Card -->
+                    <div class="dms-feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3 class="feature-card-title" data-translate="dms.features.analytics.title">Real-time Analytics</h3>
+                        <p class="feature-card-text" data-translate="dms.features.analytics.text">
+                            Track delivery performance, driver efficiency, and customer satisfaction. Make data-driven decisions to improve operations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Driver App Screenshots Section -->
+                <div class="dms-screenshots">
+                    <div class="screenshot-item">
+                        <img 
+                            src="src/nusraphoto1.png" alt="Driver App" />
                     </div>
                 </div>
             </div>
@@ -440,43 +464,80 @@
     <section id="clients" class="clients-section">
         <div class="container">
             <div class="section-header reveal">
-                <h2 class="section-title" data-translate="clients.title">Our Clients</h2>
-                <p class="section-subtitle" data-translate="clients.subtitle">Trusted by leading brands worldwide</p>
+                <h2 class="section-title" data-translate="clients.title">Trusted by</h2>
+                <p class="section-subtitle" data-translate="clients.subtitle">Teams across industries. Logistics, retail and local commerce rely on Nusra to move faster.</p>
             </div>
             <div class="clients-grid reveal">
-                <div class="client-logo">
-                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1a1a1a">Apple</text>
+                <div class="client-logo" role="img" aria-label="Apple — logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="client-logo-svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="currentColor">Apple</text>
                     </svg>
                 </div>
-                <div class="client-logo">
-                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#0066ff">Microsoft</text>
+                <div class="client-logo" role="img" aria-label="Microsoft — logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="client-logo-svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="currentColor">Microsoft</text>
                     </svg>
                 </div>
-                <div class="client-logo">
-                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#4285F4">Google</text>
+                <div class="client-logo" role="img" aria-label="Google — logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="client-logo-svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="currentColor">Google</text>
                     </svg>
                 </div>
-                <div class="client-logo">
-                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#000000">Amazon</text>
+                <div class="client-logo" role="img" aria-label="Amazon — logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="client-logo-svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="currentColor">Amazon</text>
                     </svg>
                 </div>
-                <div class="client-logo">
-                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#635BFF">Stripe</text>
+                <div class="client-logo" role="img" aria-label="Stripe — logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="client-logo-svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="currentColor">Stripe</text>
                     </svg>
                 </div>
-                <div class="client-logo">
-                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#00D4FF">Shopify</text>
+                <div class="client-logo" role="img" aria-label="Shopify — logo">
+                    <svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="client-logo-svg">
+                        <text x="10" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="currentColor">Shopify</text>
                     </svg>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Driver App Modal -->
+    <div id="driverModal" class="driver-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <h2 id="modal-title" class="modal-title" data-translate="modal.title">Driver App Demo</h2>
+            <div class="modal-screenshots">
+                <div class="screenshot-slide active">
+                    <img 
+                        src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=1125&h=2436&fit=crop" 
+                        alt="Nusra driver app — job list screen" 
+                        class="modal-screenshot"
+                        loading="lazy"
+                    >
+                    <p class="modal-caption" data-translate="modal.caption1">Driver app: job list and instant navigation — drivers accept & complete jobs with one tap.</p>
+                </div>
+                <div class="screenshot-slide">
+                    <img 
+                        src="https://images.unsplash.com/photo-1601581875037-eb1923c511a2?w=1600&h=900&fit=crop" 
+                        alt="Nusra driver app — live navigation and route" 
+                        class="modal-screenshot"
+                        loading="lazy"
+                    >
+                    <p class="modal-caption" data-translate="modal.caption2">Live GPS tracking with turn-by-turn navigation and ETA updates.</p>
+                </div>
+            </div>
+            <div class="modal-nav">
+                <button class="modal-prev" id="modalPrev" aria-label="Previous screenshot">‹</button>
+                <span class="modal-indicator">
+                    <span class="indicator-dot active" data-index="0"></span>
+                    <span class="indicator-dot" data-index="1"></span>
+                </span>
+                <button class="modal-next" id="modalNext" aria-label="Next screenshot">›</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -501,8 +562,10 @@
                     <ul class="footer-links">
                         <li><a href="#top" class="footer-link">Home</a></li>
                         <li><a href="#apps" class="footer-link">Products</a></li>
+                        <li><a href="#dms" class="footer-link">DMS</a></li>
                         <li><a href="#pricing" class="footer-link">Pricing</a></li>
                         <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#clients" class="footer-link">Clients</a></li>
                     </ul>
                 </div>
 
